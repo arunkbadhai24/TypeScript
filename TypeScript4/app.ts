@@ -1,29 +1,35 @@
-// const person:{
+// const ADMIN ='ADMIN';
+// const READ_ONLY='READ_ONLY';
+
+// enum Role {ADMIN,READ_ONLY,AUTHOR};
+enum Role {ADMIN=5,READ_ONLY,AUTHOR};
+const person
+ //:{
 //     name: string;
 //     age: number;
 
 // }
-const person:{
-    name: string;
-    age:number;
-    hobbies:string[];
-    //Tuple fixed length array
-    role:[number,string];
-} ={
+// const person
+={
     name: 'Arun',
     age: 30,
     hobbies:['Sports','Cooking'],
-    role: [2,'author']
+    // role: [2,'author']
+    role:Role.ADMIN
 };
 
 
 // person.role.push('admin');
 // person.role[1] =10;
-let favoriteActivities: string[];
-favoriteActivities =['Sports'];
+// let favoriteActivities: string[];
+// favoriteActivities =['Sports'];
 
-console.log(person.name);
+// console.log(person.name);
 
 for(const hobby of person.hobbies){
     console.log(hobby.toUpperCase());
+}
+
+if(person.role==5){
+    console.log("The Person is an Admin")
 }
