@@ -1,16 +1,6 @@
-// const ADMIN ='ADMIN';
-// const READ_ONLY='READ_ONLY';
-
-// enum Role {ADMIN,READ_ONLY,AUTHOR};
-enum Role {ADMIN=5,READ_ONLY,AUTHOR};
-const person
- //:{
-//     name: string;
-//     age: number;
-
-// }
-// const person
-={
+ enum Role {ADMIN,READ_ONLY,AUTHOR};
+// enum Role {ADMIN=5,READ_ONLY,AUTHOR};
+const person={
     name: 'Arun',
     age: 30,
     hobbies:['Sports','Cooking'],
@@ -19,17 +9,10 @@ const person
 };
 
 
-// person.role.push('admin');
-// person.role[1] =10;
-// let favoriteActivities: string[];
-// favoriteActivities =['Sports'];
-
-// console.log(person.name);
-
 for(const hobby of person.hobbies){
     console.log(hobby.toUpperCase());
 }
 
-if(person.role==5){
+if(person.role==Role.ADMIN){
     console.log("The Person is an Admin")
 }
