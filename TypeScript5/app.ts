@@ -1,4 +1,6 @@
-function combine(n1: number| string,n2: number | string){
+type Combinable = number | string;
+
+function combine(n1: Combinable,n2: Combinable, resultConversion:string){
    let result;
     if( typeof n1 == 'number' && typeof n2 == 'number'){
         result = n1 + n2;
@@ -11,8 +13,8 @@ function combine(n1: number| string,n2: number | string){
    
 }
 
-const combineAges= combine(30,20);
+const combineAges= combine(30,20,'as-number');
 console.log(combineAges);
 
-const conmbinedNames= combine('arun','kumar');
+const conmbinedNames= combine('arun','kumar','as-text');
 console.log(conmbinedNames);
