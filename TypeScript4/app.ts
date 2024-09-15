@@ -7,6 +7,7 @@ const person:{
     name: string;
     age:number;
     hobbies:string[];
+    //Tuple fixed length array
     role:[number,string];
 } ={
     name: 'Arun',
